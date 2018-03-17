@@ -1,0 +1,23 @@
+package recursion;
+
+import javax.swing.JOptionPane;
+
+public class Recursion 
+{
+
+    public static void main(String[] args) 
+    {
+        int input = Integer.parseInt(JOptionPane.showInputDialog("Input a "
+                + "number."));
+        System.out.print("Factorial = " + factorial(input));
+    }
+    
+    public static int factorial(int n)
+    {
+        if(n == 1)
+            return 1;
+        else 
+            return n * factorial(n-1);
+    }
+    
+}
